@@ -1,0 +1,19 @@
+{
+  "name": "13_open-api-to-ts-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate:types:pets": "openapi-typescript https://petstore.swagger.io/v2/swagger.json --output generated/petstore.model.ts",
+    "generate:types:ld": "openapi-typescript https://launchdarkly.github.io/ld-openapi/openapi.yaml --output generated/ld.model.ts",
+    "generate:types:omdb": "openapi-typescript https://www.omdbapi.com/swagger.json --output generated/omdb.model.ts",
+    "generate-all": "npm run generate:types:pets && npm run generate:types:ld && npm run generate:types:omdb && generate:types:omdb"
+  },
+  "keywords": [],
+  "author": "michalczukm@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "openapi-typescript": "^3.2.2"
+  }
+}
