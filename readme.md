@@ -22,13 +22,11 @@ Example script in `package.json`
 {
   // ...
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "generate:types": "openapi-typescript https://petstore.swagger.io/v2/swagger.json --output petstore.ts"
   },
   "devDependencies": {
     "openapi-typescript": "^3.2.2"
   }
-  //...
 }
 ```
 
@@ -39,6 +37,8 @@ openapi-typescript <remote or local file path> --output <out file path>
 ```
 
 ## Examples
+
+Take a look at [package.json](./package.json) scripts 👉 you will find there all below examples ready to run 😉
 
 ### OMDb API
 

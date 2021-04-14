@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "generate:types:pets": "openapi-typescript https://petstore.swagger.io/v2/swagger.json --output generated/petstore.model.ts",
     "generate:types:ld": "openapi-typescript https://launchdarkly.github.io/ld-openapi/openapi.yaml --output generated/ld.model.ts",
     "generate:types:omdb": "openapi-typescript https://www.omdbapi.com/swagger.json --output generated/omdb.model.ts",
